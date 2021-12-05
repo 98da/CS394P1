@@ -4,4 +4,6 @@
     <string name="element_text" />
 
     <string name="bitcoin">Bitcoin</string>
+    <string name="details">details</string>
+    <string name="_3_45">$3.45</string>
 </resources>
