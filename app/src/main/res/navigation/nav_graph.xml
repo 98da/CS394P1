@@ -71,9 +71,4 @@
             android:label="recycler"
             tools:layout="@layout/recycler" />
     </navigation>
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.myapplication.MainActivity"
-        android:label="recycler"
-        tools:layout="@layout/activity_main" />
 </navigation>
