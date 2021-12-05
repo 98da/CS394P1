@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         android:layout_width="410dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="660dp"
@@ -21,6 +22,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/search_cryptocurrency"
-            android:hintTextColor="#616161" />
+            android:hintTextColor="#5D4037"
+            tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="409dp"
+        android:layout_height="665dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        tools:itemCount="12"
+        tools:listitem="@layout/recycler_view_item" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

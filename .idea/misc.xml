@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ahmet/Downloads/CS394P1/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/ahmet/Downloads/CS394P1/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ahmet/Downloads/CS394P1/app/src/main/res/layout/recycler_view_item.xml" value="0.33" />
+        <entry key="..\:/Users/ahmet/Downloads/CS394P1/app/src/main/res/layout/text_row_item.xml" value="0.23731884057971014" />
       </map>
     </option>
   </component>

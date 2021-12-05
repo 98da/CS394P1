@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="search_cryptocurrency">Search Cryptocurrency</string>
+    <string name="element_text" />
+
+    <string name="bitcoin">Bitcoin</string>
 </resources>
