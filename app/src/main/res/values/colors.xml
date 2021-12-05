@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="bitcoin_yellow">#F2A900</color>
+    <color name="bitcoin_gray">#4D4D4E</color>
+    <color name="bitcoin_blue">#021853</color>
 </resources>
