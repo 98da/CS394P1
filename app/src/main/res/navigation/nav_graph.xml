@@ -17,7 +17,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginPage">
+    app:startDestination="@id/mainPage">
     <fragment android:id="@+id/accountPage" >
         <action
             android:id="@+id/action_accountPage_to_mainPage"
@@ -65,5 +65,15 @@
         <action
             android:id="@+id/action_global_mainPage"
             app:destination="@id/mainPage" />
+        <activity
+            android:id="@+id/recycler"
+            android:name="com.example.myapplication.recycler"
+            android:label="recycler"
+            tools:layout="@layout/recycler" />
     </navigation>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.myapplication.MainActivity"
+        android:label="recycler"
+        tools:layout="@layout/activity_main" />
 </navigation>
