@@ -4,19 +4,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/recycler2">
-    <activity
-        android:id="@+id/mainActivity2"
-        android:name="com.example.myapplication.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
+    app:startDestination="@id/loginPage2">
     <fragment
-        android:id="@+id/recycler2"
-        android:name="com.example.myapplication.recycler"
-        android:label="recycler"
-        tools:layout="@layout/recycler" >
+        android:id="@+id/loginPage2"
+        android:name="com.example.myapplication.loginPage"
+        android:label="loginPage" >
         <action
-            android:id="@+id/action_recycler2_to_mainActivity2"
-            app:destination="@id/mainActivity2" />
+            android:id="@+id/action_loginPage2_to_mainPage"
+            app:destination="@id/mainPage" />
     </fragment>
+    <fragment
+        android:id="@+id/mainPage"
+        android:name="com.example.myapplication.mainPage"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" />
 </navigation>
