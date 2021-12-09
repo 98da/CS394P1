@@ -12,12 +12,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        if(savedInstanceState == null){
+        /*if(savedInstanceState == null){
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
                 add<recycler>(R.id.fragment_container_view)
             }
-        }
+        }*/
 
 
 

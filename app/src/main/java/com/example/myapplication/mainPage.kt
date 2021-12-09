@@ -8,6 +8,6 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 
 
-class mainPage : Fragment() {
+class mainPage : Fragment(R.layout.fragment_main_page) {
 
 }
