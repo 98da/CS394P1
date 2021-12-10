@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-import com.example.myapplication.databinding.FragmentLoginPageBinding
+import com.example.myapplication.databinding.FragmentSignUpBinding
 
 
 class SignUp : Fragment() {
@@ -16,9 +16,9 @@ class SignUp : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = DataBindingUtil.inflate<FragmentLoginPageBinding>(inflater,R.layout.fragment_sign_up,container,false)
-        binding.loginButton.setOnClickListener{  view:View ->   //TO BE CHANGED
-            view.findNavController().navigate(R.id.action_loginPage_to_mainPage) //TO BE CHANGED
+        val binding = DataBindingUtil.inflate<FragmentSignUpBinding>(inflater,R.layout.fragment_sign_up,container,false)
+        binding.signUpButton.setOnClickListener{  view:View ->
+            view.findNavController().navigate(R.id.action_signUp_to_mainPage)
 
         }
         return binding.root
