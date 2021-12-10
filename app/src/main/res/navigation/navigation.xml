@@ -28,10 +28,9 @@
         android:id="@+id/signUp"
         android:name="com.example.myapplication.SignUp"
         android:label="SignUp" >
-        tools:layout="@layout/fragment_sign_up">
         <action
-            android:id="@+id/action_signUp_to_mainPage"
-            app:destination="@id/mainPage" />
+            android:id="@+id/action_signUp_to_loginPage"
+            app:destination="@id/loginPage" />
     </fragment>
 
 </navigation>

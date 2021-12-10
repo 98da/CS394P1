@@ -22,8 +22,11 @@ class loginPage : Fragment() {
 //      binding.signUp.setOnClickListener{  view:View -> view.findNavController().navigate(R.id.action_loginPage_to_signUp)
 
 
-}
-        return binding.root
+    }
+        binding.signUp.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_loginPage_to_signUp)
+        }
+            return binding.root
     }
 
 }
