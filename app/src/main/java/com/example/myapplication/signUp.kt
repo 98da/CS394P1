@@ -9,7 +9,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.myapplication.databinding.FragmentSignUpBinding
 
-
 class SignUp : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,

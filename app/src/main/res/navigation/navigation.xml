@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_loginPage_to_signUp"
             app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_loginPage_to_f_password"
+            app:destination="@id/f_password" />
     </fragment>
 
     <fragment
@@ -30,6 +33,15 @@
         android:label="SignUp" >
         <action
             android:id="@+id/action_signUp_to_loginPage"
+            app:destination="@id/loginPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_password"
+        android:name="com.example.myapplication.f_password"
+        android:label="fragment_f_password"
+        tools:layout="@layout/fragment_f_password" >
+        <action
+            android:id="@+id/action_f_password_to_loginPage"
             app:destination="@id/loginPage" />
     </fragment>
 

@@ -15,4 +15,8 @@
     <string name="user_name">User Name</string>
     <string name="password">Password</string>
     <string name="todo">TODO</string>
+    <string name="backgroundpic">backgroundPic</string>
+    <string name="enteremailbutton">enterEmailButton</string>
+    <string name="please_enter_your_e_mail">Please enter your E-mail</string>
+    <string name="done">Done!</string>
 </resources>

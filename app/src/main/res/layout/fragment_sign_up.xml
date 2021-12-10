@@ -12,7 +12,7 @@
             android:id="@+id/imageView"
             android:layout_width="932dp"
             android:layout_height="1025dp"
-            android:contentDescription="TODO"
+            android:contentDescription="@string/backgroundpic"
             android:rotation="90"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
