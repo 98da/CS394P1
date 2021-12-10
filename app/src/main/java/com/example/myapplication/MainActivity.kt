@@ -7,6 +7,8 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
+import okhttp3.OkHttpClient
+import okhttp3.Request
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,9 +20,6 @@ class MainActivity : AppCompatActivity() {
                 add<recycler>(R.id.fragment_container_view)
             }
         }*/
-
-
-
 
     }
 
