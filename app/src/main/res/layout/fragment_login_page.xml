@@ -13,9 +13,11 @@
         android:layout_width="932dp"
         android:layout_height="1025dp"
         android:rotation="90"
-        app:srcCompat="@drawable/_2"
-        tools:layout_editor_absoluteX="-230dp"
-        tools:layout_editor_absoluteY="-107dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_2" />
 
     <TextView
         android:id="@+id/textView"
