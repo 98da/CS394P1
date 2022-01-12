@@ -6,7 +6,7 @@ import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-//import kotlinx.android.synthetic.main.activity_register.*
+import kotlinx.android.synthetic.main.fragment_sign_up.*
 import android.text.TextUtils
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -27,7 +27,7 @@ class RegisterActivity : AppCompatActivity(){
                 TextUtils.isEmpty(et_register_email.text.toString().trim{it <= ' '}) -> {
                     Toast.makeText(
                         this@RegisterActivity,
-                        "Please enter email."
+                        "Please enter email.",
                                 Toast.LENGTH_SHORT
                     ).show()
                 }
@@ -52,7 +52,7 @@ class RegisterActivity : AppCompatActivity(){
                                     val firebaseUser: FirebaseUser = task.result!!.user!!
 
                                     Toast.makeText(
-                                        this @RegisterActivity,
+                                        this@RegisterActivity,
                                         "You are sign up successfully.",
                                         Toast.LENGTH_SHORT
                                     ).show()

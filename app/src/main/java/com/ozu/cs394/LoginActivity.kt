@@ -7,21 +7,22 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cs394.R
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.fragment_sign_in.*
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_sign_in)
 
-        tv_register.setOnClickListener{
-            startActivity(Intent(Intent(this@LoginActivity, RegisterActivity::class.java)))
+        tv_title.setOnClickListener{
+            startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
         }
 
         btn_login.setOnClickListener{
             when{
                 TextUtils.isEmpty(et_login_email.text.toString().trim{it <= ' '}) -> {
                     Toast.makeText(
-                        this@RegisterActivity,
+                        this@LoginActivity,
                         "Please enter email.",
                                 Toast.LENGTH_SHORT
                     ).show()
@@ -29,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
 
                 TextUtils.isEmpty(et_login_password.text.toString().trim{it <= ' '}) ->{
                     Toast.makeText(
-                        this@RegisterActivity,
+                        this@LoginActivity,
                         "Please enter password.",
                         Toast.LENGTH_SHORT
                     ).show()
@@ -44,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
                                 task ->
                             if(task.isSuccessful){
                                 Toast.makeText(
-                                    this @LoginActivity,
+                                    this@LoginActivity,
                                     "You are sign in successfully.",
                                     Toast.LENGTH_SHORT
                                 ).show()

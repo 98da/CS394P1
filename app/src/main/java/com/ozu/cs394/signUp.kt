@@ -18,7 +18,7 @@ class SignUp : Fragment() {
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentSignUpBinding>(inflater,
             R.layout.fragment_sign_up,container,false)
-        binding.signUpButton.setOnClickListener{  view:View ->
+        binding.btnRegister.setOnClickListener{  view:View ->
             view.findNavController().navigate(R.id.action_signUp_to_loginPage)
 
         }

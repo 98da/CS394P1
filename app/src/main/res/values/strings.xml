@@ -15,7 +15,7 @@
     <string name="user_name">User Name</string>
     <string name="password">Password</string>
     <string name="todo">TODO</string>
-<string name="btn_login"></string>
+    <string name="btn_login"></string>
     <string name="backgroundpic">backgroundPic</string>
     <string name="enteremailbutton">enterEmailButton</string>
     <string name="please_enter_your_e_mail">Please enter your E-mail</string>
@@ -27,5 +27,9 @@
     <string name="price_usd">00.00</string>
     <string name="TwentyFourHour">24hr:</string>
     <string name="TwentyFourHourPercentage">0.00%</string>
+    <string name="b_login">LOGIN</string>
+
+    <string name="til_login_email">LOGİN SCREEN</string>
+    <string name="register">register</string>
 
 </resources>

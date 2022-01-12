@@ -11,13 +11,15 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cs394.R
 
+import com.ozu.cs394.Coins
+
 
 class mainPage : Fragment(R.layout.fragment_main_page){
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) : View? {
         val view = inflater.inflate(R.layout.fragment_main_page, container, false)
-        val coinler=Coins()
+        val coinler= Coins()
         val data = ArrayList<cardView>()
 
         for (i in 1..11) {

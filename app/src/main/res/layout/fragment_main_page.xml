@@ -12,14 +12,15 @@
         android:id="@+id/btn_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOG OUT" />
+        android:text="LOG OUT"
+        android:textColor="#5D4037" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerviewX"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="641dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/card_view_design" >
+        tools:listitem="@layout/card_view_design">
 
     </androidx.recyclerview.widget.RecyclerView>
 

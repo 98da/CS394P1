@@ -1,4 +1,6 @@
-package com.example.myapplication
+package com.ozu.cs394
+
+import com.example.cs394.R
 
 class Coins {
     val names : ArrayList<String> = ArrayList<String>()

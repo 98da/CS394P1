@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/bitcoin_yellow"
-            android:text="register"
+            android:text="@string/register"
             android:textColor="#424242"
             android:textColorHint="@color/bitcoin_gray"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
-            android:text="LOGİN SCREEN"
+            android:text="@string/til_login_email"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -148,7 +148,8 @@
                 android:textColorHint="@color/black"
                 android:inputType="textEmailAddress"
                 tools:text="Type email here"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="TextContrastCheck"
+                android:autofillHints="" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -169,7 +170,8 @@
                 android:inputType="textEmailAddress"
                 android:textColorHint="@color/black"
                 tools:text="Type password here"
-                tools:ignore="TextContrastCheck,TextContrastCheck" />
+                tools:ignore="TextContrastCheck,TextContrastCheck"
+                android:autofillHints="" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -177,7 +179,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/bitcoin_yellow"
-            android:text="LOGIN"
+            android:text="@string/b_login"
             android:textColor="#424242"
             android:textColorHint="@color/bitcoin_gray"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name="com.example.cs394.com.ozu.cs394.RegisterActivity">
+        <activity android:name="com.ozu.cs394.LoginActivity">
         </activity>
         <activity
-            android:name="com.example.cs394.com.ozu.cs394.LoginActivity"
+            android:name="com.ozu.cs394.RegisterActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    <activity android:name="com.example.cs394.com.ozu.cs394.MainActivity"></activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

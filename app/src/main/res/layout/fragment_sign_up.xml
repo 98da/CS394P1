@@ -175,7 +175,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/bitcoin_yellow"
-            android:text="LOGIN"
+            android:text="@string/b_login"
             android:textColor="#424242"
             android:textColorHint="@color/bitcoin_gray"
             app:layout_constraintBottom_toBottomOf="parent"
