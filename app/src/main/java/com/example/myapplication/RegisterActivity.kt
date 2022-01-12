@@ -10,19 +10,19 @@ import kotlinx.android.synthetic.main.fragment_sign_up.*
 import android.text.TextUtils
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.cs394.R
+import kotlinx.android.synthetic.main.fragment_login_page.*
 
 class RegisterActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_sign_up)
 
-        btn_login.setOnClickListener{
-            startActivity(Intent(this, LoginActivity::class.java))
+        loginButton.setOnClickListener{
+            startActivity(Intent(this, loginPage::class.java))
         }
 
 
-        btn_register.setOnClickListener{
+        signUpButton.setOnClickListener{
             when{
                 TextUtils.isEmpty(et_register_email.text.toString().trim{it <= ' '}) -> {
                     Toast.makeText(
