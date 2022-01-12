@@ -11,21 +11,15 @@
         android:label="fragment_login_page"
         tools:layout="@layout/fragment_login_page">
         <action
-            android:id="@+id/action_loginPage_to_mainPage"
-            app:destination="@id/mainPage" />
-        <action
             android:id="@+id/action_loginPage_to_signUp"
             app:destination="@id/signUp" />
         <action
             android:id="@+id/action_loginPage_to_f_password"
             app:destination="@id/f_password" />
+        <action
+            android:id="@+id/action_loginPage_to_list"
+            app:destination="@id/navigation3" />
     </fragment>
-
-    <fragment
-        android:id="@+id/mainPage"
-        android:name="com.example.myapplication.mainPage"
-        android:label="fragment_main_page"
-        tools:layout="@layout/fragment_main_page" />
 
     <fragment
         android:id="@+id/signUp"
@@ -44,5 +38,13 @@
             android:id="@+id/action_f_password_to_loginPage"
             app:destination="@id/loginPage" />
     </fragment>
+    <navigation android:id="@+id/navigation3"
+        app:startDestination="@id/list">
+        <fragment
+            android:id="@+id/list"
+            android:name="com.example.myapplication.list"
+            android:label="fragment_list"
+            tools:layout="@layout/fragment_list" />
+    </navigation>
 
 </navigation>
