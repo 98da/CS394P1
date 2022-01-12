@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginPage"
-        android:name="com.example.myapplication.loginPage"
+        android:name="com.ozu.cs394.loginPage"
         android:label="fragment_login_page"
         tools:layout="@layout/fragment_login_page">
         <action
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/signUp"
-        android:name="com.example.myapplication.SignUp"
+        android:name="com.ozu.cs394.SignUp"
         android:label="SignUp" >
         <action
             android:id="@+id/action_signUp_to_loginPage"
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_password"
-        android:name="com.example.myapplication.f_password"
+        android:name="com.ozu.cs394.f_password"
         android:label="fragment_f_password"
         tools:layout="@layout/fragment_f_password" >
         <action
@@ -40,7 +40,7 @@
     </fragment>
     <fragment
         android:id="@+id/mainPage"
-        android:name="com.example.myapplication.mainPage"
+        android:name="com.ozu.cs394.mainPage"
         android:label="fragment_main_page"
         tools:layout="@layout/fragment_main_page" />
 

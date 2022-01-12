@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.cs394
 
 import org.junit.Test
 

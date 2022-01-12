@@ -5,7 +5,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.ozu.cs394.RegisterActivity">
+        tools:context="com.ozu.cs394.LoginActivity">
 
 
         <ImageView
@@ -20,12 +20,27 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/_2" />
 
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bitcoin_yellow"
+            android:text="register"
+            android:textColor="#424242"
+            android:textColorHint="@color/bitcoin_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.145"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_login_password"
+            app:layout_constraintVertical_bias="0.107" />
+
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
-            android:text="@string/please_pick_a_user_name_or_password"
+            android:text="LOGİN SCREEN"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -118,57 +133,44 @@
             android:contentDescription="@string/todo" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til_register_email"
+            android:id="@+id/til_login_email"
             android:layout_width="409dp"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@id/tv_title">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_register_email"
+            <EditText
+                android:id="@+id/et_login_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/user_name"
                 android:textColorHint="@color/black"
+                android:inputType="textEmailAddress"
+                tools:text="Type email here"
                 tools:ignore="TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til_register_password"
+            android:id="@+id/til_login_password"
             android:layout_width="409dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/til_register_email"
+            app:layout_constraintTop_toBottomOf="@id/til_login_email"
             app:layout_constraintVertical_bias="0.0">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_register_password"
+            <EditText
+                android:id="@+id/et_login_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/password"
+                android:inputType="textEmailAddress"
                 android:textColorHint="@color/black"
+                tools:text="Type password here"
                 tools:ignore="TextContrastCheck,TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
-
-        <Button
-            android:id="@+id/btn_register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/bitcoin_yellow"
-            android:text="@string/sign_up"
-            android:textColor="#424242"
-            android:textColorHint="@color/bitcoin_gray"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.201"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/til_register_password"
-            app:layout_constraintVertical_bias="0.093" />
 
         <Button
             android:id="@+id/btn_login"
@@ -180,10 +182,10 @@
             android:textColorHint="@color/bitcoin_gray"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.836"
+            app:layout_constraintHorizontal_bias="0.949"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/til_register_password"
-            app:layout_constraintVertical_bias="0.137" />
+            app:layout_constraintTop_toBottomOf="@+id/til_login_password"
+            app:layout_constraintVertical_bias="0.113" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

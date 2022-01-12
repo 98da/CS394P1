@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.ozu.cs394
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.cs394.R
 
 
 class mainPage : Fragment(R.layout.fragment_main_page){

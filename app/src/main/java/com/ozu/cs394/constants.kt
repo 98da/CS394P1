@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.ozu.cs394
 
 object constants {
     const val apiUrl = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
