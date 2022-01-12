@@ -5,44 +5,29 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 
-class mainPage : AppCompatActivity(){
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Fragment(R.layout.fragment_main_page)
-        val recyclerview = findViewById<RecyclerView>(R.id.recyclerview)
+class mainPage : Fragment(R.layout.fragment_main_page){
+    val all : ArrayList<CardView> = ArrayList<CardView>()
 
-        // this creates a vertical layout Manager
-        recyclerview.layoutManager = LinearLayoutManager(this)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) : View? {
+        val view = inflater.inflate(R.layout.fragment_main_page, container, false)
 
-        //ArrayList of class ItemsViewModel
         val data = ArrayList<cardView>()
 
-        // This loop will create 20 Views containing
-        // the image with the count of view
-        for (i in 1..20) {
-            data.add(cardView(R.drawable.btc, "Item " + i,"Item " + i,"Item " + i,"Item " + i,"Item " + i))
+        for (i in 1..12) {
+            data.add(cardView(R.drawable.btc, "Item " + i,"EGE " + i,"Item " + i,"Item " + i,"Item " + i))
         }
 
-        val adapter = myAdapter(data)
+        val adapterView = myAdapter(data)
 
-
-        recyclerview.adapter = adapter
-
-    }
-}
-
-class recycler() : Fragment(R.layout.recycler) {
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        val view = inflater.inflate(R.layout.recycler, container, false)
+        view.findViewById<RecyclerView>(R.id.recyclerviewX).run{
+            adapter = adapterView
+        }
 
         return view
     }
@@ -78,8 +63,13 @@ class myAdapter (private var mList: List<cardView>) : RecyclerView.Adapter<myAda
     }
 
     override fun getItemCount(): Int = mList.count()
+}
 
+data class cardView(val image: Int, val name: String, val symbol: String, val price: String, val volume: String, val change: String) {
+//     = image
+}
 
-
+class list
+{
 
 }

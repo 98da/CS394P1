@@ -18,7 +18,7 @@ class loginPage : Fragment() {
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentLoginPageBinding>(inflater,R.layout.fragment_login_page,container,false)
         binding.loginButton.setOnClickListener{  view:View ->
-            view.findNavController().navigate(R.id.action_loginPage_to_list)
+            view.findNavController().navigate(R.id.action_loginPage_to_mainPage)
         }
         binding.signUp.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_loginPage_to_signUp)
