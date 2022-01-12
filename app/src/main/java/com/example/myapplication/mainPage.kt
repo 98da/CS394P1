@@ -66,7 +66,7 @@ class myAdapter (private var mList: List<cardView>) : RecyclerView.Adapter<myAda
 }
 
 data class cardView(val image: Int, val name: String, val symbol: String, val price: String, val volume: String, val change: String) {
-//     = image
+        
 }
 
 class list
