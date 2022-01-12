@@ -3,41 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/loginPage">
+    app:startDestination="@id/entrancePage">
 
     <fragment
-        android:id="@+id/loginPage"
+        android:id="@+id/entrancePage"
         android:name="com.ozu.cs394.loginPage"
         android:label="fragment_login_page"
-        tools:layout="@layout/fragment_login_page">
-        <action
-            android:id="@+id/action_loginPage_to_signUp"
-            app:destination="@id/signUp" />
-        <action
-            android:id="@+id/action_loginPage_to_f_password"
-            app:destination="@id/f_password" />
-        <action
-            android:id="@+id/action_loginPage_to_mainPage"
-            app:destination="@id/mainPage" />
-    </fragment>
+        tools:layout="@layout/fragment_login_page"/>
 
     <fragment
-        android:id="@+id/signUp"
-        android:name="com.ozu.cs394.SignUp"
-        android:label="SignUp" >
-        <action
-            android:id="@+id/action_signUp_to_loginPage"
-            app:destination="@id/loginPage" />
-    </fragment>
+        android:id="@+id/loginPage2"
+        android:name="com.ozu.cs394.loginPage"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page"/>
     <fragment
         android:id="@+id/f_password"
         android:name="com.ozu.cs394.f_password"
         android:label="fragment_f_password"
-        tools:layout="@layout/fragment_f_password" >
-        <action
-            android:id="@+id/action_f_password_to_loginPage"
-            app:destination="@id/loginPage" />
-    </fragment>
+        tools:layout="@layout/fragment_f_password" />
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.ozu.cs394.f_password"
+        android:label="fragment_f_password"
+        tools:layout="@layout/fragment_f_password"/>
+    <fragment
+        android:id="@+id/registerPage"
+        android:name="com.ozu.cs394.f_password"
+        android:label="fragment_f_password"
+        tools:layout="@layout/fragment_f_password"/>
     <fragment
         android:id="@+id/mainPage"
         android:name="com.ozu.cs394.mainPage"

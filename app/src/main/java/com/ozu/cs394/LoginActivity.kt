@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.fragment_sign_in.*
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_sign_in)
+        setContentView(R.layout.fragment_main_page)
 
         tv_title.setOnClickListener{
             startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
