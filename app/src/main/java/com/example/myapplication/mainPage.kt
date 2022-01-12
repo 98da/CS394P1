@@ -16,11 +16,11 @@ class mainPage : Fragment(R.layout.fragment_main_page){
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) : View? {
         val view = inflater.inflate(R.layout.fragment_main_page, container, false)
-
+        val coinler=Coins()
         val data = ArrayList<cardView>()
 
         for (i in 1..12) {
-            data.add(cardView(R.drawable.btc, "Item " + i,"EGE " + i,"Item " + i,"Item " + i,"Item " + i))
+            data.add(cardView(coinler.Drawables.get(i), coinler.names.get(i),coinler.Symbols.get(i),"Item " + i,"Item " + i,"Item " + i))
         }
 
         val adapterView = myAdapter(data)
