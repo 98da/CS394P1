@@ -19,7 +19,7 @@ class mainPage : Fragment(R.layout.fragment_main_page){
         val coinler=Coins()
         val data = ArrayList<cardView>()
 
-        for (i in 1..12) {
+        for (i in 1..11) {
             data.add(cardView(coinler.Drawables.get(i), coinler.names.get(i),coinler.Symbols.get(i),"Item " + i,"Item " + i,"Item " + i))
         }
 
