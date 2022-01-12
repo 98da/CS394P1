@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
@@ -12,15 +13,15 @@ import com.example.cs394.R
 
 
 class mainPage : Fragment(R.layout.fragment_main_page){
-    val all : ArrayList<CardView> = ArrayList<CardView>()
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) : View? {
         val view = inflater.inflate(R.layout.fragment_main_page, container, false)
-
+        val coinler=Coins()
         val data = ArrayList<cardView>()
 
-        for (i in 1..12) {
-            data.add(cardView(R.drawable.btc, "Item " + i,"EGE " + i,"Item " + i,"Item " + i,"Item " + i))
+        for (i in 1..11) {
+            data.add(cardView(coinler.Drawables.get(i), coinler.names.get(i),coinler.Symbols.get(i),"Item " + i,"Item " + i,"Item " + i))
         }
 
         val adapterView = myAdapter(data)
@@ -35,7 +36,7 @@ class mainPage : Fragment(R.layout.fragment_main_page){
 
 class myAdapter (private var mList: List<cardView>) : RecyclerView.Adapter<myAdapter.ViewHolder>() {
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
-        //val imageItem: ImageView = itemView.findViewById(R.id.image)
+        val imageItem: ImageView = itemView.findViewById(R.id.image)
         val nameItem: TextView = itemView.findViewById(R.id.name)
         val symbolItem: TextView = itemView.findViewById(R.id.symbol)
         val priceItem: TextView = itemView.findViewById(R.id.priceUsdText)
@@ -54,7 +55,7 @@ class myAdapter (private var mList: List<cardView>) : RecyclerView.Adapter<myAda
 
         val cardViewModel = mList[position]
 
-        // holder.imageItem.setImageResource(cardViewModel.pri)
+        holder.imageItem.setImageResource(cardViewModel.image)
         holder.nameItem.text = cardViewModel.name
         holder.symbolItem.text = cardViewModel.symbol
         holder.priceItem.text = cardViewModel.price
@@ -66,7 +67,7 @@ class myAdapter (private var mList: List<cardView>) : RecyclerView.Adapter<myAda
 }
 
 data class cardView(val image: Int, val name: String, val symbol: String, val price: String, val volume: String, val change: String) {
-//     = image
+
 }
 
 class list
